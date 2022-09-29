@@ -82,7 +82,7 @@ export default function compContact() {
     form.classList.add('message');
 
     let formTitle = document.createElement('h3');
-    formTitle.textContent = 'Sent us a message!';
+    formTitle.textContent = 'Send us a message!';
     form.appendChild(formTitle);
 
     let name = document.createElement('div');

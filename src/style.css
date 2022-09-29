@@ -55,10 +55,20 @@
 
 .main-home {
     height: 100%;
-    padding: 56px;
+    padding: 48px;
+}
+
+.main-home > h2 {
+    font-size: 48px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 36px;
+    gap: 36px; 
 }
 
 .homeimg {
@@ -81,7 +91,60 @@
     gap: 32px;
 }
 
+/*menu*/
+
+.menu-content {
+    padding: 56px;
+}
+
+.menu-content > h2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.pizzas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.menu-content img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.pizzas h3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.pizzas > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pizzas > div button {
+    width: 150px;
+    align-self: flex-end;
+}
+
+.pizza-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    min-height: 70px;
+}
+
 /*contact*/
+
 .contact {
     height: 100%;
     display: flex;
@@ -156,6 +219,11 @@ textarea, input {
     outline: none;
     appearance: none;
     border: 2px solid var(--color3);
+}
+
+.message button {
+    margin-bottom: 36px;
+    width: 130px;
 }
 
 button {

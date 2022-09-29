@@ -4,12 +4,19 @@ export default function compHome() {
     let main = document.createElement('div');
     main.classList.add('main-home');
 
+    let title = document.createElement('h2');
+    title.textContent = "Welcome at Matthew's Pizza!"
+    main.appendChild(title);
+
+    let grid = document.createElement('div');
+    grid.classList.add('grid');
+
     let imgbox = document.createElement('div');
     imgbox.classList.add('homeimg');
     let homeImg = document.createElement('img');
     homeImg.src = pizzaPhoto;
     imgbox.appendChild(homeImg);
-    main.appendChild(imgbox);
+    grid.appendChild(imgbox);
 
     let sidetext = document.createElement('div');
     sidetext.classList.add('sidetext');
@@ -26,7 +33,9 @@ export default function compHome() {
     para2.textContent = 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
     sidetext.appendChild(para2);
 
-    main.appendChild(sidetext);
+    grid.appendChild(sidetext);
+
+    main.appendChild(grid);
 
     return main;
 }
